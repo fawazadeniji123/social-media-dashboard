@@ -1,0 +1,322 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: hsl(230, 17%, 14%);
+    font-family: 'Inter', sans-serif;
+    color: hsl(228, 34%, 66%);
+}
+body.light{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(228, 12%, 44%)
+}
+.background-box{
+    max-width: 1440px;
+    height: 245px;
+    position: absolute;
+    background-color:  hsl(232, 19%, 15%);
+    z-index: -1;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+}
+
+
+body.light .background-box{
+    background-color:  hsl(225, 100%, 98%);
+}
+
+.container{
+    width: auto;
+    max-width: 1110px;
+    margin: 35px auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.head{
+    font-size: 26px;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+body.light .head, 
+body.light .follower-number,
+body.light .social-number{
+    color: hsl(230, 17%, 14%);
+}
+
+.subtext,
+.toggle-label,
+.social-text{
+    font-size: 14px;
+}
+
+.toggle-label{
+    margin-right: 10px;
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+}
+
+.toggle-wrapper{
+    position: relative;
+    display: flex;
+}
+.toggle-wrapper:hover{
+  cursor: pointer;
+}
+.toggle-button{
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    background:linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    display: inline-block;
+    padding: 3px;
+    box-sizing: border-box;
+    position: relative;
+    transition:all 0.6s linear;
+}
+.toggle-button::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 21px;
+    border-radius: 20px;
+    background-color: hsl(232, 19%, 15%);
+    display: block;
+    margin: 0.4px;
+    transition:all 0.6s linear;
+}
+
+
+.toggle-check{
+    z-index: 1;
+    position: absolute;
+    width: 50px;
+    height:20px; 
+    top: 0;
+    right: 0;
+    margin:0;
+    opacity: 0;
+
+}
+.toggle-check:checked + 
+.toggle-button{
+    background :hsl(230, 22%, 74%);
+}
+
+.toggle-check:checked + 
+.toggle-button::after{
+    transform: translate(21px);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+    margin-top: 45px;
+
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 8px;
+    padding:25px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+
+body.light .card{
+    background-color: hsl(227, 47%, 96%);
+}
+
+.card:active{
+    cursor: pointer;
+    background: hsl(228, 28%, 20%);
+    background-color: hsla(228, 34%, 66%,0.4);
+}
+
+body.light .card:active{
+    background-color: hsl(227, 47%, 96%);
+    background-color: hsla(228, 34%, 66%,0.3);
+}
+
+
+.card::before{
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0 ;
+    position: absolute;
+    height: 4px;
+    border-top-left-radius:8px;
+    border-top-right-radius: 8px;
+    background-color: hsl(195, 100%, 50%);
+} 
+
+.card:nth-child(2)::before{
+    background-color:hsl(203, 89%, 53%);
+} 
+
+.card:nth-child(3)::before{
+    background:linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+} 
+
+.card:nth-child(4)::before{
+    background-color:hsl(348, 97%, 39%);
+} 
+.social{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-img{
+    margin-right: 10px;
+}
+
+.follower{
+    margin:25px auto;
+}
+
+.follower-number{
+    font-size: 60px;
+    color:hsl(0, 0%, 100%);
+}
+
+.follower-subtext{
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.change{
+    font-size: 12px;
+    color: hsl(163, 72%, 41%);
+}
+
+.change-last{
+    font-size: 12px;
+    color: hsl(356, 69%, 56%);
+}
+
+.arrow{
+    margin-bottom: 2px;
+}
+
+.bottom-card{
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.bottom-card-title{
+    font-size: 24px;
+    color:hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+.card-small{
+    width: 100%;
+    height: auto;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 8px;
+    padding:25px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+
+body.light .card-small{
+    background-color: hsl(227, 47%, 96%)
+}
+.card-small:active{
+    cursor: pointer;
+    background: hsl(228, 28%, 20%);
+    background-color: hsla(228, 34%, 66%,0.4);
+}
+
+.card-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    display: grid;
+    grid-row-gap: 25px;
+    text-align: left;
+}
+
+.social-number{
+    font-size: 36px;
+    color:hsl(0, 0%, 100%);
+    line-height: 0.9em;
+}
+
+.change-bottom{
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+    color: hsl(163, 72%, 41%);
+}
+
+.arrow-bottom{
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+
+.change-red{
+    font-size: 12px;
+    color: hsl(356, 69%, 56%);
+}
+
+
+@media (max-width: 960px){
+    .container{
+        padding: 25px;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+    .header-left{
+        flex-basis: 100%;
+        border-bottom: 1px solid hsl(228, 34%, 66%);
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+    }
+    .follower-subtext{
+        width: 100%;
+        display: block;
+    }
+
+    .toggle{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}

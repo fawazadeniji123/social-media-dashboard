@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="background-box"></div>
+<section class="container">
+  <!-- Header Starts -->
+  <header class="header">
+    <div class="header-left">
+      <h1 class="head">Social Media Dashboard</h1>
+     <span class="subtext">Total Followers: 23,004</span>
+    </div>
+    <div class="header-right toggle">
+      <label for="dark-mode" class="toggle-label">Dark Mode</label>
+     <div class="toggle-wrapper">
+       <input type="checkbox" name="dark-mode" class="toggle-check">
+       <span class="toggle-button"></span>
+     </div>
+   </div>
+  </header>
+     <!-- Header Ends -->
+     <!-- Top Cards -->
+   <section class="cards">
+     <div class="card">
+         <span class="social">
+          <img class="social-img" src="images/icon-facebook.svg" alt="">
+           @nathanf
+          </span>
+         <div class="follower">
+            <span class="follower-number">1987</span>
+            <span class="follower-subtext">Followers</span>
+         </div>
+         <span class="change">
+          <img class="arrow" src="images/icon-up.svg" alt="">
+           12 Today
+         </span>
+     </div>
+
+     <div class="card">
+      <span class="social">
+       <img class="social-img" src="images/icon-twitter.svg" alt="">
+        @nathanf
+       </span>
+      <div class="follower">
+         <span class="follower-number">1044</span>
+         <span class="follower-subtext">Followers</span>
+      </div>
+      <span class="change">
+        <img class="arrow" src="images/icon-up.svg" alt="">
+        99 Today
+      </span>
+  </div>
+
+  <div class="card">
+    <span class="social">
+     <img class="social-img" src="images/icon-instagram.svg" alt="">
+     @realnathanf
+     </span>
+    <div class="follower">
+       <span class="follower-number">11k</span>
+       <span class="follower-subtext">Followers</span>
+    </div>
+    <span class="change">
+      <img class="arrow" src="images/icon-up.svg" alt="">
+      1099 Today
+    </span>
+</div>
+
+<div class="card">
+  <span class="social">
+   <img class="social-img" src="images/icon-youtube.svg" alt="">
+   Nathan F.
+   </span>
+  <div class="follower">
+     <span class="follower-number">1987</span>
+     <span class="follower-subtext">Subscribers</span>
+  </div>
+  <span class="change-last">
+    <img class="arrow" src="images/icon-down.svg" alt="">
+    144 Today
+  </span>
+</div>
+   </section>
+   <!-- Top Cards Ends -->
+      <!-- Bottom Cards -->
+   <section class="bottom-card">
+     <h2 class="bottom-card-title">Overview - Today</h2>
+      <!-- First bottom Card -->
+     <div class="cards">
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+          Page Views
+         </span> 
+         <span class="social-number">87</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-facebook.svg" alt="">
+        <span class="change-bottom">
+          <img class="arrow-bottom" src="images/icon-up.svg" alt="">
+            3%
+        </span>
+      </div>
+      </div>
+           <!-- Second bottom card -->
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+          Likes
+         </span> 
+         <span class="social-number">52</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-facebook.svg" alt="">
+        <span class="change-last">
+          <img class="arrow" src="images/icon-down.svg" alt="">
+            2%
+        </span>
+      </div>
+      </div>
+          <!-- Third Bottom card -->
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+          Likes
+         </span> 
+         <span class="social-number">5462</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-instagram.svg" alt="">
+        <span class="change-bottom">
+          <img class="arrow-bottom" src="images/icon-up.svg" alt="">
+            2257%
+        </span>
+      </div>
+      </div>
+          <!-- Fourth bottom card  -->
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+          Profile Views
+         </span> 
+         <span class="social-number">52k</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-instagram.svg" alt="">
+        <span class="change-bottom">
+          <img class="arrow-bottom" src="images/icon-up.svg" alt="">
+            1375%
+        </span>
+      </div>
+      </div>
+          <!-- Fifth bottom card -->
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+         Retweets
+         </span> 
+         <span class="social-number">117</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-twitter.svg" alt="">
+        <span class="change-bottom">
+          <img class="arrow-bottom" src="images/icon-up.svg" alt="">
+            303%
+        </span>
+      </div>
+      </div>
+          <!-- Sixth bottom card -->
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+          Likes
+         </span> 
+         <span class="social-number">507</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-twitter.svg" alt="">
+        <span class="change-bottom">
+          <img class="arrow-bottom" src="images/icon-up.svg" alt="">
+            553%
+        </span>
+      </div>
+      </div>
+          <!-- Seventh bottom card -->
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+          Likes
+         </span> 
+         <span class="social-number">107</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-youtube.svg" alt="">
+        <span class="change-last">
+          <img class="arrow" src="images/icon-down.svg" alt="">
+            19%
+        </span>
+      </div>
+      </div>
+          <!-- Eigth bottom card -->
+      <div class="card-small card-columns">
+        <div class="column">
+        <span class="social-text">
+          Top Views
+         </span> 
+         <span class="social-number">1407</span>
+        </div>
+        <div class="column">
+            <img class="" src="images/icon-youtube.svg" alt="">
+        <span class="change-last">
+          <img class="arrow" src="images/icon-down.svg" alt="">
+            12%
+        </span>
+      </div>
+      </div>
+          <!-- Bottom Card Ends -->
+     </div>
+   </section>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/matincodes" target="_blank">Abdulmatin Adeniji</a>.
+  </div>
+  <script type="text/javascript"  src="script.js"></script>
+</body>
+</html>
