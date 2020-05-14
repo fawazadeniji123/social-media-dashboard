@@ -235,6 +235,9 @@ body.light .card:active{
     margin: 0;
 }
 
+body.light .bottom-card-title{
+    color: hsl(230, 17%, 14%);
+}
 .card-small{
     width: 100%;
     height: auto;
